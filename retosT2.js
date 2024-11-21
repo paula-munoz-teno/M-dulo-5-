@@ -108,27 +108,6 @@ async function main()
     // • Obtén el número total de alumnos por asignatura, el nombre de la asignatura y el nombre y
     // apellidos del profesor que la imparte.
 
-// let sql = "SELECT first_name, last_name, title,  FROM subject_teacher JOIN teachers ON (dia1.subject_teacher.teacher_id = dia1.teachers.teacher_id) JOIN subjects ON (dia1.subject_teacher.subject_id = dia1.subjects.subject_id);"
-// let [result] = await connection.query(sql) 
-//     console.log("Query realizada")
-//     console.log(result)
-
-//Obten el nº total de alumnos por asignatura 
-//El nombre de la asignatura
-//Nombre y apellidos del profesor que la imparte
-
-    
-// let sql = "SELECT subject_id, COUNT(*) AS num_marks FROM dia1.marks GROUP BY subject_id;"
-// let [result] = await connection.query(sql) 
-// console.log("Query realizada")
-// console.log(result)
-
-
-// let sql = "SELECT subject_id, COUNT(*) AS num_marks, title, dia1.teachers.first_name, dia1.teachers.last_name FROM dia1.marks, [dia1.subject_teacher] JOIN subjects ON (dia1.subject_teacher.subject_id = dia1.subjects.subject_id)JOIN teachers ON (dia1.subject_teacher.teacher_id = dia1.teachers.teacher_id) GROUP BY subject_id;"
-// let [result] = await connection.query(sql) 
-// console.log("Query realizada")
-// console.log(result)
-
 //es de marks 
 
 let sql = `
